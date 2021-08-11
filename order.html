@@ -1,36 +1,67 @@
 <!doctype html>
-Order a Melongram
+<html>
+    <head>
+        <title>
+            <h1>Order a Melongram</h1>
+        </title>
+    </head>
+<body>
+    <p id = "intro">
+    There's no better way to show a loved one you care than with a Melongram.
 
-There's no better way to show a loved one you care than with a Melongram.
+    Each Melongram comes with a custom message printed on high-quality cardstock
+    and your choice of a hand-picked, premium melon.
+    </p>
 
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
-
-Melon Options
-
+    <h2>Melon Options</h2>
+<p id = "table of melons">
 Choose from one of these melons:
+</p>
 
-Watermelon $1,200.00
-Canteloupe $400.00
-Honeydew $1,750,00.00
+<table>
+<tr><td>Watermelon</td> <td>$1,200.00</td></tr>
+<tr><td>Canteloupe</td> <td>$400.00</td></tr>
+<tr><td>Honeydew</td> <td>$1,750,00.00</td></tr>
 
-Order Form
 
-Your name
+<h2>Order Form</h2>
+<input
+type = "text"
+name = "Your name"
+recipient = "name"
+>
 
-Who are we sending this to?
-
+<select name="melon">
 Choose a melon
-Watermleon
-Canteloupe
-Honeydew
+<option value = "watermelon">Watermleon</option>
+<option value = "canteloupe">Canteloupe</option>
+<option value = "honeydew">Honeydew</option>
+</select>
 
+<form>
 When should we deliver?
-Morning
-Evening
-Any time
+<input type= "radio" name = "time" value = "am">
+<label>Morning</label>
+<input type= "radio" name = "time" value = "pm">
+<label>Evening</label>
+<input type= "radio" name = "time" value = "any">
+<label>Any time</label>
+</form>
 
-Enter your message:
+<form>
+<label>Enter your message:</label>
+<textarea name = "message"></textarea>
+</form>
 
+<form>
 Subscribe to our newsletter
-Yes
+<input type = "checkbox" name = "subscribe" value = "yes">
+<label>Yes</label>
+
+<form>
+    <button type="submit">Submit</button>
+</form>
+
+</form>
+    </body>
+</html>
